@@ -42,7 +42,7 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
-- id: 4
+  - id: 4
     name: status page
     description: 'gglvxd status page (your viewing it right now'
     url: 'http://status.gglvxx.eu.org'
@@ -51,7 +51,7 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
-- id: 5
+  - id: 5
     name: gglvxd games website
     description: 'gglvxd games website for games'
     url: 'http://games.gglvxd.tk'
@@ -60,7 +60,7 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
-- id: 6
+  - id: 6
     name: gghost - main website
     description: 'gghost main website'
     url: 'http://gghost.eu.org'
@@ -69,7 +69,7 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
-- id: 7
+  - id: 7
     name: gghost - cpanel
     description: 'gghost cpanel to manage all clients'
     url: 'http://cpanel.gghost.eu.org'
@@ -78,7 +78,7 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
-- id: 8
+  - id: 8
     name: gghost - ftp
     description: 'ftp to manage all files from all clients'
     url: 'http://ftp.gghost.eu.org'
