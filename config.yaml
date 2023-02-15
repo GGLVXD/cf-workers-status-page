@@ -1,8 +1,8 @@
 settings:
   title: 'GGLVXD servers status'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  url: 'https://status.gglvxd.eu.org' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
+  daysInHistogram: 120 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
@@ -37,6 +37,15 @@ monitors:
     name: gglvxd storage
     description: 'my storage server'
     url: 'http://storage.gglvxd.tk'
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+
+- id: 4
+    name: status page
+    description: 'gglvxd status page (your viewing it right now'
+    url: 'http://status.gglvxx.eu.org'
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
