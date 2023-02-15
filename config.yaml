@@ -15,10 +15,28 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: gglvxd.eu.org
+  - id: 1
     name: gglvxd website
     description: 'main gglvxd website'
     url: 'https://gglvxd.eu.org'
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=tr
+
+  - id: 2
+    name: gglvxd mc website
+    description: 'my minecraft website with eagar '
+    url: 'http://minecraft.gglvxd.tk'
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+
+  - id: 3
+    name: gglvxd storage
+    description: 'my storage server'
+    url: 'http://storage.gglvxd.tk'
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
