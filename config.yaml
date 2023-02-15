@@ -60,4 +60,16 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
+- id: 6
+    name: gghost - main website
+    description: 'gghost main website'
+    url: 'http://gghost.eu.org'
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+
+
+
+
 
